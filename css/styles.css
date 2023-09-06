@@ -1,0 +1,181 @@
+:root {
+  --c-brand: #fd9222;
+  --c-primary: #111;
+  --c-primary-light: #fff;
+  --c-primary-light-tr: #ffffffb2;
+  --c-background: #1e1823;
+  --c-background-light: #fafafa;
+}
+
+/* Base */
+body {
+  color: var(--c-primary);
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--c-background-light);
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+/* END Base */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button-primary {
+  color: var(--c-primary-light);
+  background-color: var(--c-brand);
+  border: none;
+  cursor: pointer;
+  padding: 14px 40px;
+  border-radius: 100px;
+  font-weight: 600;
+  line-height: 1.21;
+}
+
+.button-primary:hover {
+  color: var(--c-brand);
+  background-color: #fcf1e0;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Header */
+.logo {
+  color: var(--c-primary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  font-style: italic;
+}
+
+.nav-link {
+  color: var(--c-primary);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.nav-link:hover {
+  color: var(--c-brand);
+}
+/* END Header */
+
+/* Hero section */
+.hero-section {
+  padding: 380px 0 40px;
+  background-color: var(--c-background); /* TODO: replace with image */
+}
+
+.hero-title {
+  max-width: 484px;
+  color: var(--c-primary-light);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+
+.hero-button {
+  color: var(--c-primary-light);
+  border: 1px solid currentColor;
+  padding: 14px 40px;
+  border-radius: 100px;
+  font-weight: 600;
+  line-height: 1.21;
+}
+
+.hero-button:hover {
+  color: var(--c-brand);
+}
+
+.hero-scroll-down {
+  color: var(--c-primary-light);
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -0.03em;
+}
+
+.hero-scroll-down:hover {
+  color: var(--c-brand);
+}
+/* END Hero section */
+
+/* Advantages section */
+.advantage-section {
+  padding: 50px 0;
+  background-color: var(--c-background);
+}
+
+.advantage-icon {
+  width: 62px;
+  height: 62px;
+  margin-bottom: 22px;
+  border: 1px solid var(--c-primary-light-tr);
+  border-radius: 50%;
+}
+
+.advantage-title {
+  color: var(--c-primary-light);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  margin-bottom: 18px;
+}
+
+.advantage-text {
+  color: var(--c-primary-light-tr);
+  font-weight: 400;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+/* END Advantages section */
